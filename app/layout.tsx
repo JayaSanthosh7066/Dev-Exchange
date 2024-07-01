@@ -1,5 +1,5 @@
 import { ClerkProvider } from "@clerk/nextjs";
-import "./global.css";
+import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 import React from "react";
@@ -28,8 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${spacegrotesk.variable}`}>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body
+        className={`${inter.variable} ${spacegrotesk.variable}`}
+        suppressHydrationWarning={true}
+      >
         <ClerkProvider
           appearance={{
             elements: {
