@@ -3,9 +3,9 @@ import { getUserById } from "@/lib/actions/user.action";
 // import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-const AskQuestion = async () => {
+const Page = async () => {
   // const { userId } = auth();
-  const userId = "123451";
+  const userId = "clerk12345";
   if (!userId) redirect("/sign-in");
 
   const mongoUser = await getUserById({ userId });
@@ -19,4 +19,4 @@ const AskQuestion = async () => {
     </div>
   );
 };
-export default AskQuestion;
+export default Page;
