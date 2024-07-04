@@ -64,7 +64,6 @@ export const deleteUser = async (params: DeleteUserParams) => {
     if (!user) {
       throw new Error("User not found");
     }
-
     // if user exist delete user data from database
     // quesions,answers,comments etc
 
