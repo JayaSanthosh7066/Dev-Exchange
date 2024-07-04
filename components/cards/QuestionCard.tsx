@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Metric from "../shared/Metric/Metric";
-// import { formatAndDivideNumber, getTimeStamp } from "@/lib/utils";
-import RenderTag from "../shared/RenderTag";
-import { getTimeStamp, formatAndDivideNumber } from "@/lib/utils";
+import { formatAndDivideNumber, getTimeStamp } from "@/lib/utils";
+import RenderTag from "../shared/RightSidebar/RenderTag";
 
 interface QuestionCardProps {
   _id: string;
