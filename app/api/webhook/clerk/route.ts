@@ -57,7 +57,7 @@ export async function POST(req: Request) {
     // get user data
     const { id, email_addresses, image_url, username, first_name, last_name } =
       evt.data;
-
+    console.log(email_addresses);
     // create a server action to create a user in the database
     const mongoUser = await createUser({
       clerkId: id,
